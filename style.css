@@ -4,10 +4,11 @@ body{
   flex-direction: column;
   justify-content: space-between;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 600px;
   background-image: URL('imgs/backgrund.png');
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -23,15 +24,125 @@ body::before {
 
 header {
   display: flex;
+  flex-direction: column;	
   justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 100%;
-  height: 100px;
+  height: 300px;
   border-bottom: 3px solid black;
+  text-shadow: 0px 0px 1px black;
   font-size: 20px;
   padding: 30px;
   color: white;
-  text-shadow: 2px 2px 2px black;
+}
+
+header h1 {
+   text-shadow: 2px 2px 2px black;
+} 
+
+header h2 {
+  font-size: 20px;
+}
+
+#header-Menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 30px;
+  border-top: solid 3px black;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+header #header-Menu .fundo-span #hobbies {
+  font-size: 40px;
+}
+
+.info-span {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px #373b3a;
+  text-transform: Uppercase;
+}
+
+.fundo-span {
+  background-color: rgba(23, 25, 55, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+.caixa-texto-span {
+  background-color: white;
+  min-width: 400px;
+  max-width: 600px;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  z-index: 999;
+}
+
+.close-span {
+  color: white;
+  background-color: red;
+  padding: 2px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
+
+.close-span:hover {
+  color: red;
+  background-color: white;
+  border: solid 1px red;
+}
+
+.close-span:active {
+  transform: translate(2px, 5px);
+}
+
+.titulo-span {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  margin: 30px;
+}
+
+.tabela-span-sobremim {
+  justify-content: center;
+  color: black;
+  margin: 40px 10px;
+}
+
+.tabela-span-sobremim .tb-inf-sobremim {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.text-span {
+  z-index: 999;
+  color: black;
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.5;
 }
 
 section {
@@ -121,86 +232,6 @@ section {
   color: white;
 }
 
-footer {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  font-size: 20px;
-  border-top: solid 3px black;
-  justify-content: space-evenly;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.fundo-span {
-  background-color: rgba(23, 25, 55, 0.9);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.info-span {
-  font-size: 20px;
-  cursor: pointer;
-  text-decoration: underline;
-  text-shadow: 2px 2px 2px #373b3a;
-  text-transform: Uppercase;
-}
-
-.caixa-texto-span {
-  background-color: white;
-  width: 500px;
-  padding: 10px;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  text-align: justify;
-  z-index: 998;
-}
-
-.close-span {
-  color: white;
-  background-color: red;
-  padding: 2px 5px;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.titulo-span {
-  text-align: center;
-  font-size: 40px;
-  color: black;
-  margin: 30px;
-}
-
-.tabela-span-sobremim {
-  justify-content: center;
-  color: black;
-  margin: 40px 10px;
-}
-
-.tabela-span-sobremim .tb-inf-sobremim {
-  width: 100%;
-  padding-left: 20px;
-}
-
-.text-span {
-  z-index: 999;
-  color: black;
-  text-align: justify;
-  padding: 10px;
-  line-height: 1.5;
-}
 
 .caixa-texto-span-contato {
   background-color: white;

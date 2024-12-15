@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
-
+/*
 ::-webkit-scrollbar {
-  width: 1px;
-  background-color: transparent;
+  width: 10px;
+  background: violet;
 }
+*/
 
 a {
   text-decoration: none;

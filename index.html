@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" content="Gabriel Matheus">
   <meta name="description" content="Site de apresentação dos meus projetos">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Landing Page">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio</title>
   <link rel="stylesheet" href="style.css">
@@ -15,105 +15,18 @@
 <body>
   
     <header>
+
       <h1>Meu Portifólio</h1>
-    </header>
 
-
-    <section>
-
-      <!-- card do primeiro projeto carrossel -->
-      <div class="caixas">
-
-        <h2 class="titulo-port">Carrossel de Imagens</h2>
-
-        <img class="img-port" src="imgs/CarrosselWinx.png" alt="imagem do meu projeto de carrosel de imagens">
-
-        <h5 class="descri-port">Carrossel de imagens insprado no desenho das Winx, feito com a estrutura de caixas onde uma contem as imagens para ser fixada de fundo, outra informações e um para os botões, utilizando como complemento para aprimorar os arquivos .css e .js, com o css usei classes para esconder as imagens e as informações e apenas mostrar as que estão com a classe selecionandas, e com o js usei a forEach e adicionei o evento para que cada botão troque as de acordo com o índice de cada botão clicado.</h5>
-
-        <a class="link" href="https://gabrielmatheus1.github.io/Carrossel-de-Imagens" target="_blank"><button class="btn-site-port">visitar site</button></a>
-        
-      </div>
-
-
-      <!-- card do segundo projeto cards -->
-      <div class="caixas">
-
-        <h2 class="titulo-port">Cards</h2>
-
-        <img class="img-port" src="imgs/CardsPokemons.png" alt="imagem do meu projeto de cards">
-
-        <h5 class="descri-port">Cards inspirado no desenho do Pokemon, feito com a estrutura de listas não ordenadas, cada item da lista é uma carta, com a imagem, título e descrição, utilizando o css para aprimorar o design, e o js para a função de clique, quando o usuário clicar no botão da direita ou esquerda, ira mudar a carta para próxima ou anterior na sequência da lista.</h5>
-
-        <a href="https://gabrielmatheus1.github.io/Projeto-Cards/" target="_blank"><button class="btn-site-port">visitar site</button></a>
-
-      </div>
-
-
-      <!-- card do terceiro projeto formulário interativo -->
-      <div class="caixas">
-
-        <h2 class="titulo-port">Formulário Interativo</h2>
-
-        <img class="img-port" src="imgs/FormInterativo.png" alt="imagem do meu projeto de formulário interativo">
-
-        <h5 class="descri-port">Formulário Interativo, com a ajuda de uma API do SheetDB no atributo action e o method post, feito por etapas com JavaScript, todas as respostas preenchidas serão colocados em uma planilha de minha posse, assim que o botão de enviar for clicado, ao final aparecerá uma mensagem escrita "entraremos em contato em breve" não recarregando ou redirecionando para outras paginas , feito com inputs e labels em caixas, utilizando o css para aprimorar o design, e JavaScript para a interatividade.</h5>
-        
-        <a href="https://gabrielmatheus1.github.io/Formulario-Interativo/" target="_blank"><button class="btn-site-port">visitar site</button></a>
-
-      </div>
-
-      <!-- card do quarto projeto card seletor -->
-      <div class="caixas">
-
-        <h2 class="titulo-port">Seletor de Cards</h2>
-
-        <img class="img-port" src="imgs/CardsSelector.png" alt="imagem do meu projeto de seletor de cards">
-
-        <h5 class="descri-port">Seletor de Cards inspirado no desenho Hora de Aventura, selecionei algumas imagens de personagens para este projeto e cada um deles tem sua descrição, na lista ao lado do card tem outros personagens sendo possível substituir o card visível atual, alterei a imagem do cursor do mouse para uma Espadinha, neste projeto utilizei HTML para estrutura, CSS para estilização da pagina, e JavaScript para a interação da pagina como a troca de personagens.</h5>
-        
-        <a href="https://gabrielmatheus1.github.io/Cards-Selector/" target="_blank"><button class="btn-site-port">visitar site</button></a>
-
-      </div>
-
-  
-
-
-	<!--  modelo 
-      <div class="caixas">
-
-        <h2 class="titulo-port">(Nome)</h2>
-
-        <img class="img-port" src="(Nome Da IMAGEM.png)" alt="imagem do meu projeto (Nome do projeto)">
-
-        <h5 class="descri-port">(descrição do projeto)</h5>
-        
-        <a href="(link do projeto se estiver hospedado)" target="_blank"><button class="btn-site-port">visitar site</button></a>
-
-      </div>
-	-->
-
-
-      
-    </section>
-
-    
-    <footer>
-
-      <!-- caixa de texto que sera exibida quando clicada -->
-
+    <div id="header-Menu">
 
       <!-- info sobre mim -->
-      
-      <div class="caixa-span">
+      <div>
         <h5 class="info-span">sobre mim</h5>
-
-
             <div class="fundo-span">
-            <div class="caixa-texto-span">
-
-              <span class="close-span">X</span>
-
-              <h4 class="titulo-span">SOBRE MIM</h4>
+               <div class="caixa-texto-span">
+                   <span class="close-span"> X </span>
+           	   <h4 class="titulo-span">SOBRE MIM</h4>
 
               <table class="tabela-span-sobremim">
                  <tr>
@@ -122,7 +35,7 @@
                  </tr>
                  <tr>
                     <td>Idade:</td>
-                    <td class="tb-inf-sobremim">25 anos</td>
+                    <td class="tb-inf-sobremim">26 anos</td>
                  </tr>
                  <tr>
                     <td>Cidade:</td>
@@ -130,52 +43,42 @@
                  </tr>
                 </table>
 
-                    <p class="text-span">Futuro desenvolvedor WEB, atualmente moro na zona sul de São Paulo, trabalho no almoxarifado de uma empresa de esquadrias, meu inglês é de nível básico para intermediário, estou estudando Fullstack presencial na MFX Academy que fica na Barra fundo, e pretendo ingressar no ramo para desenvolver ainda mais meus conhecimentos, meus passa tempo são: jogar jogos mobile e mexer com minha horta.</p>
+                    <p class="text-span">Sou um futuro desenvolvedor web, atualmente morando na zona sul de São Paulo. Trabalho como auxiliar orçamentista em uma empresa de esquadrias. Meu inglês é de nível básico a intermediário, e estou estudando Fullstack presencialmente na MFX Academy, localizada na Barra Funda. Tenho um grande interesse em ingressar no ramo de desenvolvimento para expandir ainda mais meus conhecimentos.<br> <span id="hobbies">Meus Hobbies:</span> <br>
 
+Nos meus momentos de lazer, gosto de jogar videogames ou jogos mobile e cuidar da minha horta.</p>
+               </div>
             </div>
-            </div>
-
       </div>
 
 
 
       <!-- info sobre estudo-->
 
-      <div class="caixa-span">
-
+      <div>
         <h5 class="info-span">estudo</h5>
-
             <div class="fundo-span">
-            <div class="caixa-texto-span">
+              <div class="caixa-texto-span">
+                 <span class="close-span"> X </span>
+                 <h4 class="titulo-span">ESTUDOS</h4>
 
-              <span class="close-span">X</span>
-
-               <h4 class="titulo-span">ESTUDOS</h4>
-
-              <p class="text-span">Meus projetos são desenvlvidos de acordo com meu aprendizado, que foram por meios de imersivos disponibilizados em lives, pesquisas sobre certas dúvidas e pelo curso presencial na MFX Academy, e pretendo continuar aprimorando e aprendendo novas técnicas no desenvolvimento WEB.</p>
-
-            </div>
-            </div>
-
-      </div>
+              <p class="text-span">Meus projetos são desenvolvidos de acordo com meu aprendizado, que inclui imersões disponibilizadas em lives, pesquisas para esclarecer dúvidas e o curso presencial na MFX Academy. Estou sempre disposto a aprender novas ferramentas de desenvolvimento para aprimorar minhas habilidades e continuar evoluindo no campo do desenvolvimento web.</p>
+             </div>
+           </div>
+     </div>
 
 
       <!-- info sobre contato -->
-            
-        <div class="caixa-span">
-
+        <div>
           <h5 class="info-span">contato</h5>
-
-              <div class="fundo-span">
+            <div class="fundo-span">
               <div class="caixa-texto-span-contato">
-
                 <span class="close-span">X</span>
-               
+
 		  <a href="https://wa.me/5511930876062" target="_blank">
-                   <div class="contato">
-                    <h6>WhatsApp</h6>
-                    <img src="imgs/whatsapp.png" alt="icone do whatsapp" class="span-contat">
-                   </div>
+                    <div class="contato">
+                      <h6>WhatsApp</h6>
+                      <img src="imgs/whatsapp.png" alt="icone do whatsapp" class="span-contat">
+                    </div>
 		  </a>
 
 		  <a href="https://www.facebook.com/share/9diEV9zUFFP5FMYb/" target="_blank">
@@ -192,7 +95,7 @@
                    </div>
 		  </a>
 
-		  <a href="https://www.linkedin.com/in/gabriel-matheus-izidoro-dos-santos-7023991b5/" target="_blank">		 
+		  <a href="https://www.linkedin.com/in/gabriel-matheus-7023991b5/" target="_blank">		 
                    <div class="contato">
                      <h6>LinkedIn</h6>
                      <img src="imgs/linkedin.png" alt="icone do linkedin" class="span-contat">
@@ -204,8 +107,77 @@
         </div>
 
 
-    </footer>
+    </div>
 
+<h2>No meu portfólio, você encontrará projetos desenvolvidos durante imersões, outros realizados em sala de aula e alguns criados por mim mesmo.</h2>
+
+    </header>
+
+
+
+    <section>
+
+      <!-- card do primeiro projeto carrossel -->
+      <div class="caixas">
+        <h2 class="titulo-port">1. Carrossel de Imagens</h2>
+
+        <img class="img-port" src="imgs/CarrosselWinx.png" alt="imagem do meu projeto de carrosel de imagens">
+
+        <h5 class="descri-port">Carrossel de imagens insprado no desenho das Winx, feito com a estrutura de caixas onde uma contem as imagens para ser fixada de fundo, outra informações e um para os botões, utilizando como complemento para aprimorar os arquivos .css e .js, com o css usei classes para esconder as imagens e as informações e apenas mostrar as que estão com a classe selecionandas, e com o js usei a forEach e adicionei o evento para que cada botão troque as de acordo com o índice de cada botão clicado.</h5>
+
+        <a class="link" href="https://gabrielmatheus1.github.io/Carrossel-de-Imagens" target="_blank"><button class="btn-site-port">visitar site</button></a>
+      </div>
+
+
+      <!-- card do segundo projeto cards -->
+      <div class="caixas">
+        <h2 class="titulo-port">2. Cards</h2>
+
+        <img class="img-port" src="imgs/CardsPokemons.png" alt="imagem do meu projeto de cards">
+
+        <h5 class="descri-port">Cards inspirado no desenho do Pokemon, feito com a estrutura de listas não ordenadas, cada item da lista é uma carta, com a imagem, título e descrição, utilizando o css para aprimorar o design, e o js para a função de clique, quando o usuário clicar no botão da direita ou esquerda, ira mudar a carta para próxima ou anterior na sequência da lista.</h5>
+
+        <a href="https://gabrielmatheus1.github.io/Projeto-Cards/" target="_blank"><button class="btn-site-port">visitar site</button></a>
+      </div>
+
+
+      <!-- card do terceiro projeto formulário interativo -->
+      <div class="caixas">
+
+        <h2 class="titulo-port">3. Formulário Interativo</h2>
+
+        <img class="img-port" src="imgs/FormInterativo.png" alt="imagem do meu projeto de formulário interativo">
+
+        <h5 class="descri-port">Formulário Interativo, com a ajuda de uma API do SheetDB no atributo action e o method post, feito por etapas com JavaScript, todas as respostas preenchidas serão colocados em uma planilha de minha posse, assim que o botão de enviar for clicado, ao final aparecerá uma mensagem escrita "entraremos em contato em breve" não recarregando ou redirecionando para outras paginas , feito com inputs e labels em caixas, utilizando o css para aprimorar o design, e JavaScript para a interatividade.</h5>
+        
+        <a href="https://gabrielmatheus1.github.io/Formulario-Interativo/" target="_blank"><button class="btn-site-port">visitar site</button></a>
+
+      </div>
+
+
+
+
+
+
+
+
+	<!--  modelo 
+      <div class="caixas">
+
+        <h2 class="titulo-port">(Nome)</h2>
+
+        <img class="img-port" src="(Nome Da IMAGEM.png)" alt="imagem do meu projeto (Nome do projeto)">
+
+        <h5 class="descri-port">(descrição do projeto)</h5>
+        
+        <a href="(link do projeto se estiver hospedado)" target="_blank"><button class="btn-site-port">visitar site</button></a>
+
+      </div>
+	-->
+      
+    </section>
+
+    
   
   <script src="app.js"></script>
 </body>
