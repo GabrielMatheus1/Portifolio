@@ -81,6 +81,7 @@ header #header-Menu .fundo-span #hobbies {
   justify-content: center;
   align-items: center;
   z-index: 998;
+  overflow: auto;
 }
 
 .caixa-texto-span {
