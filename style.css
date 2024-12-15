@@ -75,6 +75,8 @@ header #header-Menu .fundo-span #hobbies {
   position: fixed;
   left: 0;
   top: 0;
+  padding-top: 400px;
+  padding-bottom: 100px;
   width: 100%;
   height: 100%;
   display: none;
