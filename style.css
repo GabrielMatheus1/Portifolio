@@ -86,6 +86,10 @@ header #header-Menu .fundo-span #hobbies {
   overflow: auto;
 }
 
+.span-estudos {
+  padding-top: 600px;
+}
+
 .caixa-texto-span {
   background-color: white;
   min-width: 400px;
